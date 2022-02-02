@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href=styling/normalize.css"> -->
+    <link rel="stylesheet" href="/styling/bulma.min.css" />
+    <link rel="stylesheet" href="/dist/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/52223a01d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script defer src="/js/git.js"></script>
+    <script defer src="js/ui.js"></script>
+    <script defer src="/js/script.js"></script> -->
+    <title>Dev Finder | GitHub | User search</title>
+  </head>
+  <body>
+    <section class="section is-fullheight">
+      <header class="header">
+        <div class="sm-container header-flex">
+          <h1 class="logo">devfinder</h1>
+
+          <!-- buttons for toggling between light and dark mode -->
+          <!-- light mode -->
+          <button class="light-mode btn">
+            DARK
+            <img
+              src="/assets/icon-moon.svg"
+              alt="moon"
+              class="dark-mode icon-dark"
+            />
+          </button>
+        </div>
+      </header>
+
+      <div class="sm-container search-form">
+        <form action="" class="search">
+          <img src="/assets/icon-search.svg" alt="search" class="search-icon" />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="search-input"
+            placeholder="Search GitHub user..."
+          />
+          <div class="error hidden">No results</div>
+          <button class="search-btn" type="submit" id="submit">Search</button>
+        </form>
+      </div>
+
+      <section id="user-profile" class="user"></section>
+    </section>
+    <script defer src="/js/git.js"></script>
+    <script defer src="js/ui.js"></script>
+    <script defer src="/js/script.js"></script>
+  </body>
+</html>

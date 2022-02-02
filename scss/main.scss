@@ -1,0 +1,239 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// html {
+//   height: 100%;
+// }
+
+// body {
+//   min-height: 100%;
+// }
+body {
+  font-family: 'Space Mono', monospace;
+  background: $bg-bodylight;
+  // height: 100vh;
+  // padding-top: 144px;
+  // padding-bottom: 170px;
+  // width: 100vw;
+  // height: 100vh;
+  // overflow: scroll;
+}
+
+a {
+  font-family: 'Space Mono', monospace;
+  text-decoration: none;
+  color: $darkmode-dark;
+}
+
+button {
+  font-family: 'Space Mono', monospace;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 38px;
+}
+
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 33px;
+}
+
+h3 {
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h4 {
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.sm-container {
+  max-width: 730px;
+  margin: auto;
+}
+
+.header {
+  padding-top: 144px;
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    // padding-top: 144px;
+    margin-bottom: 36px;
+
+    .btn {
+      background: none;
+      border: none;
+      text-align: center;
+    }
+  }
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  margin-bottom: 68px;
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 69px;
+    background: $bg-lightmode;
+    padding: 0.7rem;
+    border-radius: 15px;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+
+    .search-input {
+      border: none;
+      width: 100%;
+      font-family: Space Mono;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      background: transparent;
+      color: $light-navyblue;
+      text-overflow: ellipsis;
+      margin: 0 0.7rem;
+      caret-color: $light-blue;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: $light-navyblue;
+      }
+    }
+
+    .search-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.2rem;
+      margin-left: 0.9rem;
+    }
+    &-btn {
+      border: none;
+      border-radius: 10px;
+      background: $light-blue;
+      min-width: 8.4rem;
+      align-self: stretch;
+      color: $text-white;
+      overflow: hidden;
+      font-weight: 700;
+      font-size: 1.2em;
+      position: relative;
+
+      &:hover {
+        opacity: 0.9;
+        transition: opacity 150ms;
+      }
+    }
+    .error {
+      color: $text-danger;
+      font-size: 15px;
+      white-space: nowrap;
+      margin-right: 1rem;
+    }
+  }
+}
+
+.user {
+  // background: $bg-lightmode;
+  // box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  // border-radius: 15px;
+  // margin-bottom: 10.6em;
+
+  h2#account-name {
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    font-size: 26px;
+    color: $light-dark;
+  }
+
+  p#user-name {
+    color: $light-blue;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  p#bio {
+    color: $light-navyblue;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 25px;
+    letter-spacing: 1;
+  }
+
+  p#joining {
+    color: $light-grey;
+    font-size: 15px;
+  }
+
+  .user-info {
+    background: $bg-lightmode;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 10px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .column-level {
+    max-width: 480px;
+    background: $bg-bodylight;
+    border-radius: 10px;
+    margin-bottom: 37px;
+  }
+
+  .column-l {
+    max-width: 480px;
+  }
+  .user-avatar {
+    // border-radius: 50%
+    img.avatar {
+      border-radius: 50%;
+      height: 117px;
+      width: 117px;
+    }
+  }
+}
+
+.has-bg-lightmode {
+  background: $bg-bodylight;
+}
+
+.has-border-radius {
+  border-radius: 10px;
+}
+
+.has-image-radius {
+  border-radius: 50%;
+  width: 117px;
+  height: 117px;
+}
